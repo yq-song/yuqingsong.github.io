@@ -114,3 +114,21 @@ section ul {
 section li {
   text-align: left;   /* ensure each list item is left-aligned */
 }
+
+/* Research section */
+.home-research {
+  text-align: left;   /* align flush left */
+  margin-left: 20px;  /* match header text spacing */
+}
+.home-research p {
+  margin: 0.3em 0;
+}
+
+/* Contact section */
+.home-contact {
+  text-align: left;   /* align flush left */
+  margin-left: 20px;  /* match header text spacing */
+}
+.home-contact p {
+  margin: 0.5em 0;
+}
