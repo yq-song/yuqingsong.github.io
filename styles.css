@@ -77,19 +77,23 @@ header p.small-gap {
   margin-top: 1em; /* adds half a line of space above */
 }
 
-/* Profile photo styling */
-.profile-photo {
-  width: 20%;        /* takes 20% of header width */
-  max-width: 220px;  /* never larger than 220px */
-  min-width: 150px;  /* never smaller than 150px */
-}
-
+/* Header layout */
 .header-container {
   display: flex;
   justify-content: space-between; /* text left, photo right */
   align-items: center;            /* vertical alignment */
+  padding: 20px;
 }
 
 .header-photo {
-  margin-left: 20px; /* spacing between text and photo */
+  margin-left: 20px;   /* space between text and photo */
+  margin-right: 30px;  /* space from right edge */
+}
+
+/* Profile photo styling */
+.profile-photo {
+  width: 25%;          /* slightly bigger than before */
+  max-width: 240px;    /* never larger than 240px */
+  min-width: 160px;    /* never smaller than 160px */
+  display: block;
 }
