@@ -79,9 +79,9 @@ header p.small-gap {
 
 /* Profile photo styling */
 .profile-photo {
-  width: 180px;        /* adjust size */
-  border-radius: 50%;  /* circular crop */
-  display: block;
+  width: 15%;          /* takes 15% of container width */
+  max-width: 150px;    /* never larger than 150px */
+  border-radius: 50%;
 }
 
 .header-container {
