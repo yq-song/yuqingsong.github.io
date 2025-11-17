@@ -72,3 +72,7 @@ footer {
   border-top: 1px solid #ccc;
   color: #333;              /* medium grey text */
 }
+
+.small-gap {
+  margin-top: 0.5em;  /* adds half a line of space above */
+}
