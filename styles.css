@@ -37,14 +37,15 @@ nav a:hover {
 /* Header and Section containers */
 header, section {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px 20px 20px 15px; /* top right bottom left */
+  margin-left: 40px;        /* push block closer to left edge */
+  margin-right: auto;       /* no equal centering */
+  padding: 20px 20px 20px 0; /* remove left padding, keep top/right/bottom */
   text-align: left;
 }
 
 /* Header text */
 header h1, header p {
-  margin: 0.3em 0;    /* neat spacing */
+  margin: 0.3em 0;
   text-align: left;
 }
 
@@ -58,7 +59,7 @@ section h2 {
 section ul {
   list-style: none;   /* remove bullets */
   padding-left: 0;    /* remove indentation */
-  margin-left: 0;     /* align flush with section padding */
+  margin-left: 0;     /* align flush with section edge */
 }
 
 section li, section p {
@@ -86,8 +87,8 @@ footer {
 .header-container {
   display: flex;
   justify-content: space-between; /* text left, photo right */
-  align-items: center;            /* vertical alignment */
-  padding: 20px;
+  align-items: flex-start;        /* photo aligns to top */
+  padding: 20px 0;                /* remove left padding */
 }
 
 .header-photo {
