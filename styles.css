@@ -132,3 +132,20 @@ section li {
 .home-contact p {
   margin: 0.5em 0;
 }
+
+/* Contact section alignment */
+section {
+  text-align: left;   /* force section text to align left */
+  margin-left: 0;     /* remove unintended left margin */
+}
+
+section ul {
+  list-style: none;   /* remove bullets */
+  padding-left: 0;    /* remove default indentation */
+  margin-left: 20px;  /* align with header text spacing */
+}
+
+section li {
+  text-align: left;   /* ensure each item is left-aligned */
+  margin: 0.3em 0;    /* neat spacing between lines */
+}
