@@ -35,10 +35,33 @@ nav a:hover {
 }
 
 /* Page sections */
-section {
+/* Header container to match section alignment */
+header {
+  max-width: 800px;   /* same width as sections */
+  margin: 0 auto;     /* center the block, but keep text left */
   padding: 20px;
+  text-align: left;
+}
+
+header h1, header p {
+  margin-left: 20px;  /* consistent left spacing */
+}
+
+section {
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+section ul {
+  list-style: none;   /* remove bullets */
+  padding-left: 0;    /* remove indentation */
+  margin-left: 20px;  /* align with header text */
+}
+
+section li, section p {
+  margin: 0.3em 0;
   text-align: left;
 }
 
@@ -46,21 +69,6 @@ h1, h2 {
   font-family: "Garamond", serif;
   color: #000;              /* pure black headings */
   margin-top: 0;
-}
-
-/* Lists inside CV sections */
-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-section li {
-  margin-bottom: 15px;
-}
-
-section li strong {
-  font-size: 1.1em;
-  color: #000;
 }
 
 /* Footer */
@@ -97,21 +105,4 @@ header p.small-gap {
   min-width: 160px;    /* never smaller than 160px */
   border-radius: 50%;  /* makes the photo perfectly round */
   display: block;
-}
-
-/* Contact section alignment */
-section {
-  text-align: left;   /* align flush left */
-  margin-left: 0;     /* no unintended margin */
-}
-
-section ul {
-  list-style: none;   /* remove bullets */
-  padding-left: 0;    /* remove indentation */
-  margin-left: 0;     /* align flush with header text */
-}
-
-section li {
-  text-align: left;   /* align each item left */
-  margin: 0.3em 0;    /* neat spacing */
 }
