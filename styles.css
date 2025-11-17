@@ -34,11 +34,11 @@ nav a:hover {
   color: #555;              /* dark grey hover */
 }
 
-/* Header container to match section alignment */
-header {
-  max-width: 800px;   /* same width as sections */
-  margin: 0 auto;     /* center the block, text left inside */
-  padding: 20px;
+/* Header and Section containers */
+header, section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 15px; /* top right bottom left */
   text-align: left;
 }
 
@@ -48,19 +48,13 @@ header h1, header p {
   text-align: left;
 }
 
-/* Page sections */
-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
-}
-
+/* Section headings */
 section h2 {
   margin: 0.5em 0;
   text-align: left;
 }
 
+/* Section lists */
 section ul {
   list-style: none;   /* remove bullets */
   padding-left: 0;    /* remove indentation */
