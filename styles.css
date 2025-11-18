@@ -23,7 +23,8 @@ nav ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;         /* allows wrapping on smaller screens */
-  gap: 1rem;
+  gap: 2.5rem;
+  justify-content: flex-end; /* NEW: push links to the right */
 }
 
 nav a {
