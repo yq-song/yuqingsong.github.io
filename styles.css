@@ -140,7 +140,7 @@ footer {
   }
 
   .profile-photo {
-    width: 45%;                /* larger share of row */
+    width: 65%;                /* larger share of row */
     max-width: 240px;          /* cap size */
     min-width: auto;           /* remove rigid minimum */
   }
