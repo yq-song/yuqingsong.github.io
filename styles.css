@@ -169,19 +169,21 @@ footer {
     width: 100%;          /* ensure full width on mobile */
     padding: 15px 20px;   /* give more vertical space */
     box-sizing: border-box; /* padding included in width */
+    display: block;           /* ensure block layout */
   }
    
   nav ul {
-    flex-direction: column;    /* stack links vertically */
-    gap: 10px;                 /* smaller spacing */
-    align-items: center;       /* center links */
-  }
-
-nav a {
-  display: block;       /* stack links like banner text */
-  width: 100%;          /* links stretch across nav */
-  line-height: 1.4;     /* breathing room */
-  padding: 5px 0;       /* vertical spacing per link */
-  font-size: 1rem;      /* same as banner text */
-  }
+      display: block;           /* reset flex → normal block list */
+      margin: 0;
+      padding: 0;
+    }
+  
+  nav a {
+    display: block;       /* stack links like banner text */
+    width: 100%;          /* links stretch across nav */
+    line-height: 1.4;     /* breathing room */
+    text-align: center;       /* center text like banner */
+    padding: 8px 0;       /* vertical spacing per link */
+    font-size: 1rem;      /* same as banner text */
+    }
 }
