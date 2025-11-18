@@ -115,3 +115,37 @@ footer {
   border-radius: 50%;  /* perfectly round */
   display: block;
 }
+
+/* Base styles remain the same */
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  header, section {
+    max-width: 100%;       /* allow full width */
+    margin: 0;             /* remove left offset */
+    padding: 10px;         /* consistent padding */
+  }
+
+  nav ul {
+    flex-direction: column; /* stack links vertically */
+    gap: 10px;              /* smaller spacing */
+    align-items: center;    /* center links */
+  }
+
+  .header-container {
+    flex-direction: column; /* stack text and photo */
+    align-items: center;    /* center everything */
+  }
+
+  .profile-photo {
+    width: 60%;             /* larger relative size */
+    max-width: 180px;       /* cap size for small screens */
+    min-width: auto;        /* remove rigid minimum */
+    margin: 10px 0;         /* spacing around photo */
+  }
+
+  .job-market-banner {
+    font-size: 0.9em;       /* slightly smaller text */
+    padding: 8px;           /* tighter padding */
+  }
+}
