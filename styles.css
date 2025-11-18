@@ -30,6 +30,11 @@ nav a {
   font-weight: bold;
 }
 
+/* Ensure nav links match body text and banner */
+nav a {
+  font-size: 1rem;     /* same as body text */
+}
+
 nav a:hover {
   color: #555;              /* dark grey hover */
 }
@@ -43,6 +48,7 @@ nav a:hover {
   text-align: center;          /* center the text */
   font-weight: bold;           /* emphasize */
   color: #111;                 /* same black text as nav links */
+  font-size: 1rem;     /* same as nav + body */
 }
 
 /* Header and Section containers */
@@ -147,7 +153,6 @@ footer {
 
   nav a,
   .job-market-banner {
-    font-size: 0.95rem;        /* consistent scaling */
+    font-size: 0.95rem;        /* scale down together */
   }
 }
-
