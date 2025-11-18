@@ -135,13 +135,13 @@ footer {
 
   .header-container {
     flex-direction: row;       /* keep text + photo side by side */
-    align-items: flex-start;   /* align top edges */
+    align-items: center;       /* center photo vertically with text */
     gap: 15px;                 /* spacing between text and photo */
   }
 
   .profile-photo {
-    width: 35%;                /* larger share of row */
-    max-width: 200px;          /* cap size */
+    width: 45%;                /* larger share of row */
+    max-width: 240px;          /* cap size */
     min-width: auto;           /* remove rigid minimum */
   }
 
