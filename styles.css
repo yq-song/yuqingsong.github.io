@@ -151,10 +151,18 @@ footer {
     text-align: left;    /* keep left alignment */
   }
 
-  .header-container {
-    flex-direction: row;       /* keep text + photo side by side */
-    align-items: center;       /* center photo vertically with text */
-    gap: 15px;                 /* spacing between text and photo */
+ .header-container {
+    display: block;    /* stack text and photo vertically */
+  }
+
+  .header-photo {
+    display: block;
+    margin: 15px auto; /* center photo with space above/below */
+  }
+
+  .header-text {
+    font-size: 1rem;   /* consistent with body text */
+    line-height: 1.4;  /* natural spacing */
   }
 
   nav {
