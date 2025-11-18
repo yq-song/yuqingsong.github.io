@@ -107,11 +107,18 @@ h1, h2 {
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
-  background: #f9f9f9;      /* light grey background */
-  margin-top: 40px;
+  font-size: 0.9rem;        /* NEW: slightly smaller text */
+  color: #666;              /* CHANGED: lighter grey text */
+  margin-top: 2rem;         /* CHANGED: relative spacing instead of fixed px */
+  padding: 1rem 0;          /* CHANGED: flexible vertical padding */
   border-top: 1px solid #ccc;
-  color: #333;              /* medium grey text */
+}
+footer a {
+  color: #666;              /* NEW: link color matches footer text */
+  text-decoration: none;    /* NEW: cleaner look */
+}
+footer a:hover {
+  text-decoration: underline; /* NEW: hover effect */
 }
 
 /* Header layout (text + photo side by side) */
