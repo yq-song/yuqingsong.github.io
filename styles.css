@@ -146,8 +146,10 @@ footer {
     align-items: center;       /* center links */
   }
 
-  nav a,
-  .job-market-banner {
-    font-size: 1.2rem;  /* larger on mobile */
+nav a {
+  display: block;       /* stack links like banner text */
+  line-height: 1.4;     /* breathing room */
+  padding: 5px 0;       /* vertical spacing per link */
+  font-size: 1rem;      /* same as banner text */
   }
 }
