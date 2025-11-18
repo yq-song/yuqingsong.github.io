@@ -139,12 +139,6 @@ footer {
     gap: 15px;                 /* spacing between text and photo */
   }
 
-  .profile-photo {
-    width: 65%;                /* larger share of row */
-    max-width: 240px;          /* cap size */
-    min-width: auto;           /* remove rigid minimum */
-  }
-
   nav ul {
     flex-direction: column;    /* stack links vertically */
     gap: 10px;                 /* smaller spacing */
