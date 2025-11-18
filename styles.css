@@ -136,6 +136,10 @@ footer {
   display: block;
 }
 
+.small-gap {
+  margin-top: 0.3em;   /* add space above this paragraph */
+}
+
 /* Base styles remain the same */
 
 /* Mobile overrides — clean version */
