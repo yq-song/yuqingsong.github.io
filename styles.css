@@ -11,7 +11,7 @@ body {
 /* Navigation bar */
 nav {
   background-color: #f9f9f9; /* very light grey */
-  padding-right: 30px;       /* extra space on the right only */
+  padding-right: 40px;       /* extra space on the right only */
   margin-bottom: 0;
   border-bottom: 1px solid #ccc; /* medium grey line */
   box-sizing: border-box;
