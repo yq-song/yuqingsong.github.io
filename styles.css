@@ -14,6 +14,7 @@ nav {
   padding: 10px 20px;
   margin-bottom: 0;
   border-bottom: 1px solid #ccc; /* medium grey line */
+  box-sizing: border-box;
 }
 
 nav ul {
@@ -21,13 +22,15 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;         /* allows wrapping on smaller screens */
+  gap: 1rem;
 }
 
 nav a {
   text-decoration: none;
   color: #111;              /* black links */
   font-weight: bold;
+  font-size: 1rem;         /* consistent with banner text */
 }
 
 nav a:hover {
@@ -116,7 +119,7 @@ footer {
   display: flex;
   justify-content: space-between; /* text left, photo right */
   align-items: flex-start;        /* photo aligns to top */
-  gap: 15px;
+  gap: 1rem;               /* flexible spacing */
   padding-top: 0;          /* ensure no extra space above */
 }
 
@@ -125,6 +128,12 @@ footer {
   min-width: 0;         /* allow wrapping instead of overflow */
   font-size: 1rem;   /* same as body text */
   line-height: 1.4;  /* natural spacing */
+}
+
+.header-text h1,
+.header-text p {
+  margin-top: 0;
+  margin-bottom: 0.3em;   /* consistent spacing */
 }
 
 .header-photo {
@@ -191,4 +200,45 @@ footer {
     padding: 8px 0;       /* vertical spacing per link */
     font-size: 1rem;      /* same as banner text */
     }
+}
+
+/* Tablet widths */
+@media (max-width: 900px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 600px) {
+  .header-container {
+    display: block;        /* stack text + photo vertically */
+  }
+
+  .header-photo {
+    display: block;
+    margin: 15px auto;     /* center photo */
+  }
+
+  nav {
+    width: 100%;
+    padding: 0.875rem 5%;
+    display: block;
+  }
+
+  nav ul {
+    display: block;        /* reset flex → block list */
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
 }
