@@ -256,7 +256,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;   /* stack vertically */
     align-items: center;      /* center each line */
-    gap: 0.5em;               /* space between items */
+    gap: 0.2em;               /* space between items */
   }
 
   footer a {
