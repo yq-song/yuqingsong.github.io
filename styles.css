@@ -157,10 +157,6 @@ footer a:hover {
   display: block;
 }
 
-.small-gap {
-  margin-top: 0.8em;   /* add space above this paragraph */
-}
-
 /* Base styles remain the same */
 
 /* Mobile overrides — clean version */
@@ -248,4 +244,8 @@ footer a:hover {
     padding: 0.5rem 0;
     font-size: 1rem;
   }
+}
+
+.small-gap {
+  margin-top: 0.5em;   /* add space above this paragraph */
 }
