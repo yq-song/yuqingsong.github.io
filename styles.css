@@ -30,6 +30,13 @@ nav a {
   font-weight: bold;
 }
 
+/* Ensure nav links and banner text match */
+nav a,
+.job-market-banner {
+  font-size: 1rem;     /* same size as body text */
+  font-weight: bold;   /* already consistent */
+}
+
 nav a:hover {
   color: #555;              /* dark grey hover */
 }
@@ -147,5 +154,19 @@ footer {
   .job-market-banner {
     font-size: 0.9em;       /* slightly smaller text */
     padding: 8px;           /* tighter padding */
+  }
+}
+
+/* Mobile overrides */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;   /* stack links vertically */
+    gap: 10px;                /* smaller spacing */
+    align-items: center;      /* center links */
+  }
+
+  nav a,
+  .job-market-banner {
+    font-size: 0.95rem;       /* scale down slightly */
   }
 }
