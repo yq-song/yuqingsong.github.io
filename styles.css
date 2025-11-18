@@ -30,13 +30,6 @@ nav a {
   font-weight: bold;
 }
 
-/* Ensure nav links and banner text match */
-nav a,
-.job-market-banner {
-  font-size: 1rem;     /* same size as body text */
-  font-weight: bold;   /* already consistent */
-}
-
 nav a:hover {
   color: #555;              /* dark grey hover */
 }
@@ -125,69 +118,36 @@ footer {
 
 /* Base styles remain the same */
 
-/* Mobile adjustments */
+/* Mobile overrides — clean version */
 @media (max-width: 600px) {
   header, section {
-    max-width: 100%;       /* allow full width */
-    margin: 0;             /* remove left offset */
-    padding: 10px;         /* consistent padding */
-  }
-
-  nav ul {
-    flex-direction: column; /* stack links vertically */
-    gap: 10px;              /* smaller spacing */
-    align-items: center;    /* center links */
-  }
-
-  .header-container {
-    flex-direction: column; /* stack text and photo */
-    align-items: center;    /* center everything */
-  }
-
-  .profile-photo {
-    width: 60%;             /* larger relative size */
-    max-width: 180px;       /* cap size for small screens */
-    min-width: auto;        /* remove rigid minimum */
-    margin: 10px 0;         /* spacing around photo */
-  }
-
-  .job-market-banner {
-    font-size: 0.9em;       /* slightly smaller text */
-    padding: 8px;           /* tighter padding */
-  }
-}
-
-/* Mobile overrides */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;   /* stack links vertically */
-    gap: 10px;                /* smaller spacing */
-    align-items: center;      /* center links */
-  }
-
-  nav a,
-  .job-market-banner {
-    font-size: 0.95rem;       /* scale down slightly */
-  }
-}
-
-@media (max-width: 600px) {
-  header, section {
-    max-width: 100%;     /* let text use full width */
+    max-width: 100%;     /* allow full width */
     margin: 0;           /* remove forced left offset */
     padding: 10px;       /* balanced padding */
     text-align: left;    /* keep left alignment */
   }
 
   .header-container {
-    flex-direction: column;   /* stack text and photo vertically */
-    align-items: flex-start;  /* keep left alignment */
+    flex-direction: row;       /* keep text + photo side by side */
+    align-items: flex-start;   /* align top edges */
+    gap: 15px;                 /* spacing between text and photo */
   }
 
   .profile-photo {
-    width: 50%;          /* relative size */
-    max-width: 160px;    /* cap size */
-    min-width: auto;     /* remove rigid minimum */
-    margin: 10px 0;      /* spacing below text */
+    width: 35%;                /* larger share of row */
+    max-width: 200px;          /* cap size */
+    min-width: auto;           /* remove rigid minimum */
+  }
+
+  nav ul {
+    flex-direction: column;    /* stack links vertically */
+    gap: 10px;                 /* smaller spacing */
+    align-items: center;       /* center links */
+  }
+
+  nav a,
+  .job-market-banner {
+    font-size: 0.95rem;        /* consistent scaling */
   }
 }
+
