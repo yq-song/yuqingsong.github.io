@@ -198,11 +198,11 @@ footer i {
   }
   
   nav {
-    width: 100%;              /* full width */
-    padding: 10px;            /* lighter padding, avoids making bar too tall */
+    width: 100%;         /* full width */
+    padding: 0.875rem 5%;/* balanced padding, avoids making bar too tall */
     box-sizing: border-box;
-    display: block;           /* stack layout */
-    height: auto;             /* let height adjust naturally */
+    display: block;      /* stack layout */
+    height: auto;        /* let height adjust naturally */
   }
 
   nav ul {
@@ -212,12 +212,13 @@ footer i {
     text-align: center;       /* center the whole list */
   }
 
-  nav a {
+ nav a {
     display: block;
-    width: 100%;              /* links stretch across nav */
-    padding: 10px 0;          /* vertical breathing room */
-    font-size: 1rem;
+    width: 100%;         /* links stretch across nav */
+    text-align: center;
     line-height: 1.4;
+    padding: 0.75rem 0;  /* vertical breathing room */
+    font-size: 1rem;
   }
 }
 
