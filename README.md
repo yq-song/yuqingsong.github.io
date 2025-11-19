@@ -1,2 +1,2 @@
 # yuqingsong.github.io
-This is my personal website.
+This is Yuqing Song's personal website.
