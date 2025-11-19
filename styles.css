@@ -177,30 +177,32 @@ footer i {
 /* Mobile overrides — clean version */
 /* Mobile (≤600px) */
 @media (max-width: 600px) {
-  header, section {
-    max-width: 100%;     /* full width */
+ header {
     margin: 0;
-    padding: 10px;       /* balanced padding */
-    text-align: left;    /* keep simple alignment */
+    padding: 0;          /* remove extra padding */
+    text-align: left;    /* same as body text */
   }
 
-  .header-container {
-    display: block;      /* stack text and photo vertically */
+  .header-container,
+  .header-text {
+    display: contents;   /* make wrappers invisible */
     margin: 0;
     padding: 0;
   }
 
   .header-photo {
     display: block;
-    margin: 15px auto;   /* center photo */
-    max-width: 80%;      /* prevent overflow on small screens */
+    margin: 15px 0;       /* space above/below, no auto centering */
+    max-width: 80%;       /* prevent overflow on small screens */
+    float: left;          /* align photo to the left */
   }
 
-  .header-text {
-    font-size: 1rem;     /* consistent with body text */
-    line-height: 1.4;
-    margin: 0;
-    padding: 0;
+  /* Let h1 and p use default body styles */
+  header h1, header p {
+    margin: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: inherit;
   }
 
   nav {
