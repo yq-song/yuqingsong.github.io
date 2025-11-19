@@ -242,8 +242,10 @@ footer i {
   }
 
   .header-text {
-    font-size: inherit;   /* follow body size */
-    line-height: inherit; /* follow body spacing */
+    font-size: inherit;   /* follow body font size */
+    line-height: inherit; /* follow body line height */
+    margin: 0;
+    padding: 0;
   }
 
   .header-photo {
