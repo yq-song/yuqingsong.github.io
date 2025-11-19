@@ -242,8 +242,8 @@ footer i {
   }
 
   .header-text {
-    font-size: 0.9rem;     /* shrink header text a bit */
-    line-height: 1.3;      /* tighter spacing */
+    font-size: inherit;   /* follow body size */
+    line-height: inherit; /* follow body spacing */
   }
 
   .header-photo {
