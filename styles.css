@@ -285,20 +285,20 @@ footer i {
 }
 
 details {
-  margin-top: 0.35rem;   /* small gap before the toggle */
-  margin-left: 0;        /* remove browser default indent */
-  padding-left: 0;       /* reset padding */
+  margin-left: 0;
+  padding-left: 0;
 }
 
 summary {
-  display: list-item;    /* keeps the triangle marker visible */
-  margin-left: 0;        /* align flush with headers */
-  padding-left: 0;       /* no extra spacing */
+  display: list-item;          /* keeps triangle visible */
+  list-style-position: inside; /* marker sits inside text block */
+  margin: 0;
+  padding: 0;
   font-weight: bold;
   cursor: pointer;
   line-height: 1.4;
 }
 
 summary::-webkit-details-marker {
-  margin-right: 0.25rem; /* neat gap between triangle and text */
+  margin-right: 0.25rem;       /* neat gap between triangle and text */
 }
