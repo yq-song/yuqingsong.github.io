@@ -298,3 +298,15 @@ summary {
 summary::-webkit-details-marker {
   margin-right: 0.25rem; /* neat gap between triangle and text */
 }
+
+summary {
+  display: list-item;   /* restores the default triangle marker */
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 0;
+  line-height: 1.4;
+}
+
+summary::-webkit-details-marker {
+  margin-right: 0.25rem; /* neat gap between triangle and text */
+}
