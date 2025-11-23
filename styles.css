@@ -274,3 +274,27 @@ footer i {
 .small-gap {
   margin-top: 0.5em !important;
 }
+
+.paper {
+  margin-bottom: 1.5rem; /* consistent blank line between papers */
+}
+
+.paper p {
+  margin: 0.25rem 0;     /* tighter vertical spacing for title/journal lines */
+  line-height: 1.4;      /* readable but compact */
+}
+
+details {
+  margin-top: 0.35rem;   /* small gap before the toggle */
+}
+
+summary {
+  display: inline-block; /* keeps triangle aligned with text */
+  margin-left: 0;        /* removes default indent */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+summary::-webkit-details-marker {
+  margin-right: 0.25rem; /* neat gap between triangle and text */
+}
