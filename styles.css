@@ -28,6 +28,12 @@ nav {
   height: 50px;              /* fixed height for the bar */
   display: flex;
   align-items: center;       /* vertically center contents */
+
+  position: fixed;       /* sticks to the top */
+  top: 0;                /* align at very top */
+  left: 0;               /* anchor to left edge */
+  width: 100%;           /* always full width */
+  z-index: 1000;         /* stays above other content */
 }
 
 nav ul {
@@ -120,11 +126,13 @@ h1, h2 {
   margin-top: 0;            /* remove default extra spacing */
 }
 
-/* Footer */
+/* Main content area */
 main {
+  padding-top: 60px; /* adjust to match nav height */
   flex: 1; /* pushes footer down */
 }
 
+/* Footer */
 footer {
   text-align: center;
   font-size: 0.9rem;
