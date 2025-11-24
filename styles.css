@@ -113,7 +113,7 @@ nav, .job-market-banner {
 
 /* Main content area */
 main {
-  padding-top: calc(var(--nav-height) + var(--banner-height));
+  padding-top: calc(var(--nav-height, 60px) + var(--banner-height, 60px)) !important;
   flex: 1; /* pushes footer down */
   margin: 0; /* prevent margin collapse */
     
