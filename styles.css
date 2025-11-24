@@ -86,8 +86,6 @@ nav a,
 }
 
 .job-market-banner {
-  position: relative; /* default, not fixed */
-  width: 100%;
   background-color: #f9f9f9;   /* same very light grey as nav */
   padding: 10px 20px;          /* same padding as nav */
   
@@ -96,6 +94,7 @@ nav a,
   font-weight: bold;           /* emphasize */
   color: #111;                 /* same black text as nav links */
   
+  margin-top: 60px; /* push banner below fixed nav */
   margin-bottom: 20px; /* optional spacing below banner */
 }
 
@@ -105,7 +104,7 @@ nav, .job-market-banner {
 
 /* Main content area */
 main {
-  padding-top: calc(var(--nav-height) + var(--banner-height)); /* nav height only */
+  padding-top: 120px; /* or calc(var(--nav-height) + var(--banner-height)) */
   flex: 1; /* pushes footer down */
 }
 
