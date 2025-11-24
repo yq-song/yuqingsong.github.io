@@ -114,6 +114,7 @@ nav, .job-market-banner {
 main {
   padding-top: calc(var(--nav-height) + var(--banner-height));
   flex: 1; /* pushes footer down */
+  margin: 0; /* prevent margin collapse */
 }
 
 /* Header and Section containers */
