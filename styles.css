@@ -1,4 +1,8 @@
 /* Global styles */
+:root {
+  --nav-height: 60px;      /* adjust to your actual nav height */
+  --banner-height: 60px;   /* adjust to your actual banner height */
+}
 
 /* Global reset */
 html, body {
@@ -43,7 +47,7 @@ nav {
   justify-content: space-between; /* brand left, links right */
 
   border-bottom: 1px solid #ccc; /* medium grey line */
-  height: auto;             /* remove fixed height */
+  height: var(--nav-height);
 
   z-index: 1000;         /* stays above other content */
 
@@ -86,6 +90,7 @@ nav a,
 }
 
 .job-market-banner {
+  height: var(--banner-height);
   background-color: #f9f9f9;   /* same very light grey as nav */
   padding: 10px 20px;          /* same padding as nav */
   
@@ -94,7 +99,7 @@ nav a,
   font-weight: bold;           /* emphasize */
   color: #111;                 /* same black text as nav links */
   
-  margin-top: 60px; /* push banner below fixed nav */
+  margin-top: var(--nav-height); /* push below fixed nav */
   margin-bottom: 20px; /* optional spacing below banner */
 }
 
@@ -104,7 +109,7 @@ nav, .job-market-banner {
 
 /* Main content area */
 main {
-  padding-top: 180px; /* or calc(var(--nav-height) + var(--banner-height)) */
+  padding-top: calc(var(--nav-height) + var(--banner-height));
   flex: 1; /* pushes footer down */
 }
 
