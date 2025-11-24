@@ -18,6 +18,12 @@ body {
   flex-direction: column;
 }
 
+/* Main content area */
+main {
+  padding-top: 60px; /* adjust to match nav height */
+  flex: 1; /* pushes footer down */
+}
+
 /* Navigation bar */
 nav {
   background-color: #f9f9f9; /* very light grey */
@@ -25,7 +31,7 @@ nav {
   margin-bottom: 0;
   border-bottom: 1px solid #ccc; /* medium grey line */
   box-sizing: border-box;
-  height: 50px;              /* fixed height for the bar */
+  height: 60px;              /* fixed height for the bar */
   display: flex;
   align-items: center;       /* vertically center contents */
 
@@ -126,18 +132,12 @@ h1, h2 {
   margin-top: 0;            /* remove default extra spacing */
 }
 
-/* Main content area */
-main {
-  padding-top: 60px; /* adjust to match nav height */
-  flex: 1; /* pushes footer down */
-}
-
 /* Footer */
 footer {
   text-align: center;
   font-size: 0.9rem;
   color: #666;
-  margin-top: 2rem;
+  margin-top: auto;
   padding: 1rem 0;
   border-top: 1px solid #ccc;
   background: #f9f9f9;
