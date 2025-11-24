@@ -54,7 +54,7 @@ nav .brand {
   font-weight: bold;
   font-size: 2rem;
   color: #111;
-  margin-left: 7px; /* 7px from the left edge */
+  margin-left: 10px; /* 7px from the left edge */
   white-space: nowrap; /* force text to stay on one line */
 }
 
