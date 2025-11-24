@@ -87,6 +87,8 @@ nav a,
   text-align: center;          /* center the text */
   font-weight: bold;           /* emphasize */
   color: #111;                 /* same black text as nav links */
+
+  box-sizing: border-box;  /* include padding in width */
 }
 
 /* Header and Section containers */
@@ -256,6 +258,7 @@ footer i {
   
   .job-market-banner {
     margin-top: 120px; /* taller nav on mobile */
+    width: 100%;       /* keep full width */
   }
 }
 
