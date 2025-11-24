@@ -97,8 +97,6 @@ nav a,
   height: var(--banner-height, 60px) !important;
   flex-shrink: 0 !important; /* prevent flexbox from squeezing it! */
   margin-top: var(--nav-height, 60px);
-
-  margin-bottom: 20px; /* optional spacing below banner */
   
   background-color: #f9f9f9;   /* same very light grey as nav */
   padding: 0 20px;          /* horizontal padding only */
