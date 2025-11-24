@@ -104,6 +104,10 @@ nav a,
   border-bottom: 1px solid #ccc; /* same grey divider */
   font-weight: bold;           /* emphasize */
   color: #111;                 /* same black text as nav links */
+
+  white-space: nowrap;            /* prevent wrapping */
+  overflow: hidden;               /* clip overflow text */
+  text-overflow: ellipsis;        /* show "…" if text too long */
 }
 
 nav, .job-market-banner {
