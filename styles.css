@@ -75,7 +75,7 @@ nav a,
 .job-market-banner {
   background-color: #f9f9f9;   /* same very light grey as nav */
   padding: 10px 20px;          /* same padding as nav */
-  margin-top: 0;               /* no space above banner */
+  margin-top: 60px; /* same as nav height */
   margin-bottom: 20px;         /* spacing below banner */
   border-bottom: 1px solid #ccc; /* same grey divider */
   text-align: center;          /* center the text */
@@ -247,7 +247,12 @@ footer i {
     padding: 0.75rem 0;  /* vertical breathing room */
     font-size: 1rem;
   }
+  
+  .job-market-banner {
+    margin-top: 120px; /* taller nav on mobile */
+  }
 }
+
 
 /* Tablet widths */
 @media (max-width: 900px) {
