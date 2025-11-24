@@ -7,6 +7,10 @@ html, body {
   height: 100%;   /* optional: ensures full-height layout */
 }
 
+html {
+  overflow-y: scroll; /* always reserve space for scrollbar */
+}
+
 body {
   font-family: "Garamond", serif;
   margin: 0;
