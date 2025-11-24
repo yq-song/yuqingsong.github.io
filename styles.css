@@ -90,7 +90,7 @@ nav a,
 }
 
 .job-market-banner {
-  display: flex !important;   /* robust centering */
+  display: flex;   /* robust centering */
   align-items: center;        /* vertical center */
   justify-content: center;    /* horizontal center */
   
