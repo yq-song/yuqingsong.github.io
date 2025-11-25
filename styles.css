@@ -303,8 +303,12 @@ footer i {
   }
   
   .job-market-banner {
-    margin-top: 120px; /* taller nav on mobile */
-    width: 100%;       /* keep full width */
+    flex-wrap: wrap;       /* allow text to break into lines */
+    font-size: 1rem;       /* slightly smaller text */
+    padding: 0.5rem 10px;  /* reduce padding */
+    height: auto;          /* let height expand naturally */
+    margin-top: 120px;     /* account for taller stacked nav */
+    text-align: center;    /* keep content centered */
   }
 
   main {
@@ -324,6 +328,7 @@ footer i {
 @media (max-width: 400px) {
   nav a {
     font-size: 0.9rem;     /* slightly smaller text */
+    line-height: 1.2;      /* keep readability */
     padding: 0.6rem 0;     /* keep touch-friendly spacing */
   }
 
