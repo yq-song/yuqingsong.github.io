@@ -274,7 +274,7 @@ footer i {
     width: 100%;         /* full width */
     padding: 0.875rem 5%;/* balanced padding, avoids making bar too tall */
     box-sizing: border-box;
-    display: block;      /* stack layout */
+    display: flex;        /* enable flexbox */
     height: auto;        /* let height adjust naturally */
     flex-direction: column;   /* stack brand + links vertically */
     align-items: center;      /* center everything horizontally */
