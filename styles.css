@@ -282,14 +282,19 @@ footer i {
   }
   
   nav .brand {
-    margin-left: 0;          /* remove left offset */
-    text-align: center;      /* center text itself */
-    flex: 1;                 /* allow it to take full width */
-  }  
+    position: fixed;   /* pin it */
+    top: 0;            /* stick to the very top */
+    left: 0;
+    width: 100%;       /* span full width */
+    background-color: #f9f9f9; /* match nav background */
+    z-index: 1000;     /* keep above other elements */
+    text-align: center;
+    padding: 0.75rem 0; /* breathing room */
+  }
 
   nav ul {
     display: block;           /* stack links vertically */
-    margin: 0;
+    margin-top: 3rem; /* adjust based on brand height */
     padding: 0;
     text-align: center;       /* center the whole list */
   }
@@ -308,7 +313,7 @@ footer i {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     padding: 0.5rem 10px;  /* reduce padding */
     height: auto;          /* let height expand naturally */
-    margin-top: 0; /* no gap under nav */
+    margin-top: 3rem; /* adjust based on brand height */
     text-align: center;    /* keep content centered */
   }
 
