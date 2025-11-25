@@ -228,7 +228,7 @@ footer i {
 }
 
 .header-photo {
-  margin-left: 60px;   /* space between text and photo */
+  margin-left: 100px;   /* space between text and photo */
   margin-right: auto;  /* push photo toward the middle/right */
 }
 
@@ -276,7 +276,15 @@ footer i {
     box-sizing: border-box;
     display: block;      /* stack layout */
     height: auto;        /* let height adjust naturally */
+    flex-direction: column;   /* stack brand + links vertically */
+    align-items: center;      /* center everything horizontally */
   }
+
+  nav .brand {
+    margin-left: 0;          /* remove left offset */
+    text-align: center;      /* center text itself */
+    flex: 1;                 /* allow it to take full width */
+  }  
 
   nav ul {
     display: block;           /* stack links vertically */
