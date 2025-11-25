@@ -55,6 +55,7 @@ nav {
 }
 
 nav .brand {
+  text-decoration: none; /* remove underline */
   font-weight: bold;
   font-size: 2rem;
   color: #111;
@@ -290,6 +291,7 @@ footer i {
     z-index: 1000;     /* keep above other elements */
     text-align: center;
     padding: 0.75rem 0; /* breathing room */
+    text-decoration: none; /* remove underline */
   }
 
   nav ul {
@@ -313,7 +315,7 @@ footer i {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     padding: 0.5rem 10px;  /* reduce padding */
     height: auto;          /* let height expand naturally */
-    margin-top: 3rem; /* adjust based on brand height */
+    margin-top: 0;
     text-align: center;    /* keep content centered */
   }
 
