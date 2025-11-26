@@ -210,7 +210,7 @@ footer i {
 .header-container {
   display: flex;
   justify-content: space-between; /* text left, photo right */
-  align-items: flex-start;        /* photo aligns to top */
+  align-items: center;            /* vertically center them */
   gap: 1rem;               /* flexible spacing */
   padding-top: 0;          /* ensure no extra space above */
 }
@@ -229,8 +229,10 @@ footer i {
 }
 
 .header-photo {
-  display: block;          /* make it a block element */
-  margin: 0 auto;          /* auto left/right margins center it */
+  flex: 0;        /* don’t stretch */
+  margin: 0;          /* auto left/right margins center it */
+  display: flex;  /* allow centering inside */
+  align-items: center; /* vertical centering */
 }
 
 /* Profile photo styling */
