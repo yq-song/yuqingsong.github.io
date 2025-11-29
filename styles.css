@@ -125,10 +125,9 @@ header, main {
 }
 
 .signature {
-  max-width: 300px;   /* scales down if too large */
-  height: auto;       /* keeps proportions */
-  display: block;     /* avoids inline spacing issues */
-  margin: 0 auto;     /* centers inside the h1 */
+  height: 2em;       /* matches default h1 text height */
+  width: auto;       /* keeps proportions */
+  vertical-align: middle; /* aligns nicely with text baseline */
 }
 
 /* Header and Section containers */
