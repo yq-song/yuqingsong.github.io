@@ -125,7 +125,7 @@ header, main {
 }
 
 .signature {
-  height: 2em;       /* matches default h1 text height */
+  height: 1em;       /* matches default h1 text height */
   width: auto;       /* keeps proportions */
   vertical-align: middle; /* aligns nicely with text baseline */
 }
